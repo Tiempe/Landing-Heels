@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // !!! SOSTITUISCI QUESTO CON IL TUO NUMERO DI TELEFONO REALE !!!
     // Includi il prefisso internazionale SENZA il '+' o '00'
     // Esempio: per l'Italia +39 3331234567 diventa 393331234567
-    const yourWhatsAppNumber = '39XXXXXXXXXX'; // <--- METTI QUI IL TUO NUMERO!
+    const yourWhatsAppNumber = '393939662531'; // <--- METTI QUI IL TUO NUMERO!
     // ---------------------
 
     if (!form) {
