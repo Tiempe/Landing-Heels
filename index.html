@@ -1,89 +1,57 @@
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Corso Heels Dance Roma - 10 Aprile | Iscriviti Ora!</title>
-    <meta name="description" content="Partecipa al nostro esclusivo corso di Heels Dance a Roma il 10 Aprile. Impara tecnica, stile e sensualità sui tacchi. Posti limitati!">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
+<section id="iscrizione" class="registration">
+    <div class="container">
+        <h2>Iscriviti e Paga Ora!</h2>
+        <p>Assicurati il tuo posto per questa esperienza unica di Heels Dance!</p>
 
-    <header class="hero">
-        <div class="container">
-            <h1>Libera la Tua Energia sui Tacchi!</h1>
-            <h2>Corso Intensivo di Heels Dance a Roma</h2>
-            <p class="date-location"><strong>Quando:</strong> Mercoledì 10 Aprile 2024 <br> <strong>Dove:</strong> Roma (Zona [Inserisci Zona Esatta o Quartiere])</p>
-            <p class="subtitle">Un'occasione unica per scoprire la potenza, l'eleganza e la sensualità della danza sui tacchi. Adatto a [Specifica Livello: es. Principianti / Tutti i Livelli].</p>
-            <a href="#iscrizione" class="cta-button">Iscriviti Subito! Posti Limitati!</a>
+        <div class="payment-option paypal-option">
+            <h3>Opzione 1: Pagamento Rapido con PayPal</h3>
+
+            <div class="pricing-details">
+                <h4>✨ Prezzi ✨</h4>
+                <p><strong>Sconto Early Bird:</strong> 20€ (Pagamento entro il 5 Aprile)</p>
+                <p><strong>Prezzo Standard:</strong> 25€ (Pagamento dal 6 Aprile)</p>
+            </div>
+
+            <div class="instructions">
+                <h4>Istruzioni PayPal:</h4>
+                <ol>
+                    <li>Clicca sul pulsante "Paga con PayPal" qui sotto.</li>
+                    <li>Inserisci l'importo corretto (20€ o 25€ in base alla data).</li>
+                    <li><strong>Nella causale/nota di PayPal scrivi OBBLIGATORIAMENTE:</strong><br><code>Nome Cognome + entry level class</code><br>(Sostituisci "Nome Cognome" con il tuo nome e cognome).</li>
+                    <li>Completa il pagamento.</li>
+                    <li><strong>Invia lo screen della ricevuta di pagamento</strong> via WhatsApp a [Il Tuo Numero WhatsApp Qui - es. 3331234567] o via Email a [La Tua Email Qui - opzionale].</li>
+                </ol>
+            </div>
+
+            <a href="https://www.paypal.me/NicoleRusso974" target="_blank" class="cta-button paypal-button">
+                Paga con PayPal (20€ o 25€)
+            </a>
+             <p class="note">Cliccando verrai reindirizzato al link PayPal.me di Nicole Russo.</p>
         </div>
-    </header>
 
-    <section class="details">
-        <div class="container">
-            <h2>Cosa Imparerai?</h2>
-            <ul>
-                <li>👠 Tecnica base e avanzata della camminata e postura sui tacchi</li>
-                <li>💃 Movimenti fluidi, floorwork e pose iconiche</li>
-                <li>✨ Coreografie energiche e sensuali</li>
-                <li>自信 Aumentare la tua confidenza e consapevolezza corporea</li>
-                <li>❤️ Esprimere te stessa/o in un ambiente sicuro e divertente</li>
-            </ul>
+        <hr class="divider"> <!-- Linea di separazione -->
 
-            <h2>A Chi è Rivolto?</h2>
-            <p>Questo corso è perfetto per chiunque voglia esplorare la Heels Dance, migliorare la propria tecnica o semplicemente provare qualcosa di nuovo ed eccitante. Non è richiesta esperienza pregressa [Modifica se necessario], solo voglia di mettersi in gioco!</p>
+        <div class="payment-option bank-option">
+            <h3>Opzione 2: Pagamento con Bonifico (Se non hai PayPal)</h3>
+            <p>Se non puoi utilizzare PayPal, puoi pagare eccezionalmente tramite bonifico bancario.</p>
 
-             <!-- Sezione opzionale sull'insegnante -->
-             <!--
-             <h2>L'Insegnante</h2>
-             <div class="instructor">
-                 <img src="link_tua_foto.jpg" alt="Foto Insegnante" class="instructor-photo">
-                 <p>Breve bio dell'insegnante. Parla della tua esperienza, passione e cosa ti rende unico/a nell'insegnamento della Heels Dance.</p>
-             </div>
-             -->
+            <button id="show-iban-button" class="cta-button secondary-button">Mostra Dettagli per Bonifico</button>
 
-             <h2>Dettagli Pratici</h2>
-             <p><strong>Data:</strong> Mercoledì 10 Aprile 2024</p>
-             <p><strong>Orario:</strong> [Inserisci Orario, es. 19:00 - 21:00]</p>
-             <p><strong>Location:</strong> [Nome Palestra/Scuola e Indirizzo Completo], Roma</p>
-             <p><strong>Costo:</strong> [Inserisci Costo] €</p>
-             <p><strong>Cosa Portare:</strong> Tacchi comodi (con protezione se richiesto dalla sala), abbigliamento comodo che ti faccia sentire a tuo agio, acqua.</p>
-             <p><strong>Importante:</strong> I posti sono limitati per garantire la qualità dell'esperienza. La registrazione è obbligatoria.</p>
+            <div id="iban-details" class="iban-details-hidden">
+                <h4>Istruzioni Bonifico:</h4>
+                <p>Effettua un bonifico utilizzando i seguenti dati:</p>
+                <p><strong>Beneficiario:</strong> [Nome Intestatario Conto - es. Nicole Russo]</p>
+                <p><strong>IBAN:</strong></p>
+                <p class="iban-code"><code>IT62Q3608105138299688899693</code></p>
+                <p><strong>Importo:</strong> 20€ (entro il 5 Aprile) o 25€ (dal 6 Aprile)</p>
+                <p><strong>Causale OBBLIGATORIA:</strong></p>
+                <p><code>Nome Cognome + regalo Ni</code><br>(Sostituisci "Nome Cognome" con il tuo nome e cognome).</p>
+                <br>
+                <p><strong>IMPORTANTE:</strong> Dopo aver effettuato il bonifico, <strong>invia la foto/screenshot della ricevuta</strong> via WhatsApp a [Il Tuo Numero WhatsApp Qui - es. 3331234567] o via Email a [La Tua Email Qui - opzionale] per confermare la tua iscrizione. I tempi di accredito del bonifico possono richiedere 1-3 giorni lavorativi.</p>
+            </div>
         </div>
-    </section>
 
-    <section id="iscrizione" class="registration">
-        <div class="container">
-            <h2>Blocca il Tuo Posto!</h2>
-            <p>Compila il modulo qui sotto. Verrai ricontattato/a via WhatsApp per confermare la tua iscrizione e fornirti i dettagli per il pagamento.</p>
+         <p class="privacy-info">I tuoi dati di pagamento sono gestiti da PayPal o dalla tua banca. Riceveremo solo le informazioni necessarie (nome, cognome dalla causale e conferma pagamento) per registrare la tua iscrizione.</p>
 
-            <form id="registration-form">
-                <div class="form-group">
-                    <label for="name">Nome e Cognome:</label>
-                    <input type="text" id="name" name="name" required placeholder="Es. Maria Rossi">
-                </div>
-                <div class="form-group">
-                    <label for="phone">Numero di Telefono (WhatsApp):</label>
-                    <input type="tel" id="phone" name="phone" required placeholder="Es. 3331234567" pattern="[0-9]{8,15}">
-                     <small>Inserisci il numero che usi su WhatsApp.</small>
-                </div>
-                <button type="submit" class="cta-button">Invia Richiesta di Iscrizione via WhatsApp</button>
-                <p id="form-message" class="form-message"></p>
-            </form>
-            <p class="privacy-info">I tuoi dati saranno utilizzati esclusivamente per contattarti riguardo al corso, nel rispetto della normativa sulla privacy.</p>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>© 2024 [Il Tuo Nome / Nome Scuola]. Tutti i diritti riservati.</p>
-            <!-- Aggiungi qui eventuali link social se li hai -->
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+    </div>
+</section>
