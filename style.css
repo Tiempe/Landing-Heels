@@ -1,278 +1,149 @@
-/* Reset e Stili Base */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
-
-.container {
-    max-width: 960px;
-    margin: auto;
-    overflow: hidden;
-    padding: 0 20px;
-}
-
-h1, h2 {
-    margin-bottom: 1rem;
-    font-weight: 600;
-    color: #5a2d82; /* Viola scuro tema Heels */
-}
-
-h1 {
-    font-size: 2.8rem;
-    line-height: 1.2;
-}
-
-h2 {
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #e476d4; /* Rosa acceso tema Heels */
-}
-
-p {
-    margin-bottom: 1rem;
-}
-
-/* Header / Hero Section */
-.hero {
-    background: linear-gradient(rgba(90, 45, 130, 0.7), rgba(90, 45, 130, 0.8)), url('https://images.unsplash.com/photo-1598318860239-d55d13485f80?q=80&w=1934&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover; /* Immagine generica - CAMBIALA SE VUOI */
-    color: #fff;
-    padding: 6rem 0;
-    text-align: center;
-    min-height: 60vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hero h1 {
-    color: #fff;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
-}
-
-.hero h2 {
-    color: #f0f0f0;
-    font-weight: 400;
-    margin-bottom: 1.5rem;
-    border-bottom: none;
-    font-size: 1.8rem;
-}
-
-.hero .date-location {
-    font-size: 1.1rem;
-    font-weight: 600;
-    background-color: rgba(228, 118, 212, 0.8); /* Rosa semi-trasparente */
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    margin-bottom: 1.5rem;
-}
-
-.hero .subtitle {
-    font-size: 1.1rem;
-    max-width: 700px;
-    margin: 0 auto 2rem auto;
-}
-
-/* Pulsante Call to Action */
-.cta-button {
-    display: inline-block;
-    background-color: #e476d4; /* Rosa acceso */
-    color: #fff;
-    padding: 12px 30px;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border: none; /* Per il pulsante del form */
-    cursor: pointer; /* Per il pulsante del form */
-}
-
-.cta-button:hover {
-    background-color: #d15bbd; /* Rosa leggermente più scuro */
-    transform: scale(1.05);
-}
-
-/* Sezione Dettagli */
-.details {
-    padding: 4rem 0;
-    background-color: #fff;
-}
-
-.details ul {
-    list-style: none; /* Rimuove i pallini di default */
-    padding-left: 0;
-    margin-bottom: 2rem;
-}
-
-.details ul li {
-    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="%23e476d4" class="bi bi-check-circle-fill" viewBox="0 0 16 16"><path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/></svg>') no-repeat left center; /* Icona check rosa */
-    padding-left: 25px; /* Spazio per l'icona */
-    margin-bottom: 0.8rem;
-    font-size: 1.05rem;
-}
-
-.instructor {
-    display: flex;
-    align-items: center;
-    gap: 20px; /* Spazio tra foto e testo */
-    margin-top: 2rem;
-    background-color: #f9f9f9;
-    padding: 1.5rem;
-    border-radius: 8px;
-}
-
-.instructor-photo {
-    width: 100px; /* O la dimensione che preferisci */
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover; /* Per non distorcere l'immagine */
-}
-
-/* Sezione Registrazione / Form */
-.registration {
-    padding: 4rem 0;
-    background-color: #fdf6fd; /* Sfondo leggermente violaceo/rosa */
-}
-
+/* Stili per la nuova sezione Iscrizione */
 .registration h2 {
-     border-bottom-color: #5a2d82; /* Viola scuro per contrasto */
+    margin-bottom: 1.5rem; /* Meno spazio sotto H2 */
 }
 
-.registration p {
-    text-align: center;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+.registration > .container > p {
+    margin-bottom: 2.5rem; /* Più spazio sotto il paragrafo introduttivo */
+    font-size: 1.1rem;
 }
 
-#registration-form {
-    max-width: 500px;
-    margin: 0 auto;
-    background: #fff;
+.payment-option {
+    background-color: #fff;
     padding: 2rem;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    margin-bottom: 2.5rem;
+    text-align: left; /* Allinea testo a sinistra dentro i box */
 }
 
-.form-group {
+.payment-option h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #5a2d82; /* Viola scuro */
+    font-size: 1.6rem;
+}
+
+.pricing-details {
+    background-color: #fdf6fd; /* Sfondo leggermente viola/rosa */
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #e476d4; /* Bordo laterale rosa */
+}
+
+.pricing-details h4 {
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.pricing-details p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.instructions {
     margin-bottom: 1.5rem;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #555;
+.instructions h4 {
+     margin-bottom: 0.8rem;
+     color: #444;
+     border-bottom: 1px solid #eee;
+     padding-bottom: 0.3rem;
 }
 
-.form-group input[type="text"],
-.form-group input[type="tel"] {
+.instructions ol {
+    padding-left: 20px; /* Spazio per i numeri */
+    margin-bottom: 1rem;
+}
+
+.instructions ol li {
+    margin-bottom: 0.7rem;
+    line-height: 1.5;
+}
+
+.instructions code { /* Stile per la causale e IBAN */
+    background-color: #e9ecef;
+    padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 95%;
+    border-radius: 3px;
+    font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    word-wrap: break-word; /* Va a capo se troppo lungo */
+}
+
+.payment-option .cta-button {
+    display: block; /* Bottone a larghezza piena nel box */
     width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-family: inherit;
-}
-
-.form-group input:focus {
-    outline: none;
-    border-color: #e476d4;
-    box-shadow: 0 0 0 2px rgba(228, 118, 212, 0.3);
-}
-
-.form-group small {
-    display: block;
-    margin-top: 0.3rem;
-    font-size: 0.85rem;
-    color: #777;
-}
-
-#registration-form button[type="submit"] {
-    width: 100%;
-    margin-top: 1rem;
-}
-
-.form-message {
-    margin-top: 1rem;
-    padding: 10px;
-    border-radius: 5px;
+    max-width: 350px; /* Limita larghezza massima bottone */
+    margin: 1.5rem auto 0 auto; /* Centra il bottone */
     text-align: center;
-    font-weight: bold;
 }
 
-.form-message.success {
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-}
-
-.form-message.error {
-    background-color: #f8d7da;
-    color: #721c24;
-    border: 1px solid #f5c6cb;
-}
-
-.privacy-info {
-    font-size: 0.85rem;
+.paypal-option .note {
+    text-align: center;
+    font-size: 0.9rem;
     color: #666;
-    margin-top: 2rem;
+    margin-top: 0.8rem;
 }
 
-/* Footer */
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem 0;
-    margin-top: 2rem; /* Spazio sopra il footer */
+.divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 3rem auto; /* Spazio sopra e sotto la linea */
+    width: 80%;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2.2rem;
-    }
-    .hero h2 {
-        font-size: 1.5rem;
-    }
-    .hero {
-        padding: 4rem 0;
-        min-height: 50vh;
-    }
-    .instructor {
-        flex-direction: column;
-        text-align: center;
-    }
+.bank-option .cta-button.secondary-button {
+    background-color: #6c757d; /* Grigio per bottone secondario */
+    border: none;
+    cursor: pointer;
+     max-width: 300px; /* Più piccolo del bottone PayPal */
 }
 
-@media (max-width: 480px) {
-    h1 {
-        font-size: 1.8rem;
-    }
-    h2 {
-        font-size: 1.6rem;
-    }
-    .hero h2 {
-        font-size: 1.3rem;
-    }
-    .cta-button {
-        padding: 10px 20px;
-        font-size: 1rem;
-    }
-    #registration-form {
-        padding: 1.5rem;
-    }
+.bank-option .cta-button.secondary-button:hover {
+    background-color: #5a6268;
+    transform: scale(1.03); /* Effetto leggermente diverso */
 }
+
+/* Classi per mostrare/nascondere IBAN */
+.iban-details-hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    margin-top: 1.5rem; /* Spazio quando appare */
+}
+
+.iban-details-visible {
+    display: block;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    margin-top: 1.5rem; /* Spazio quando appare */
+    background-color: #f8f9fa; /* Sfondo leggermente grigio per distinguerlo */
+    padding: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid #eee;
+}
+
+.iban-details-visible h4 {
+    margin-bottom: 1rem;
+     color: #444;
+     border-bottom: 1px solid #ddd;
+     padding-bottom: 0.3rem;
+}
+
+.iban-details-visible p {
+    margin-bottom: 0.8rem;
+    line-height: 1.5;
+}
+
+.iban-details-visible .iban-code {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+/* Footer (aggiusto un po' il margine sopra se serve) */
+/* footer { margin-top: 3rem; } */ /* Decommenta se vuoi più spazio sopra il footer */
